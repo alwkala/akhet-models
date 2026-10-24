@@ -1,0 +1,27 @@
+# Model weights & binaries (hosted on Hugging Face Hub)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.onnx
+
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+
+# Logs and Caches
+*.log
+.cache/
+.pytest_cache/
+.coverage
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
