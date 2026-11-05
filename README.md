@@ -6,7 +6,8 @@
 [![Deployment: Local--First](https://img.shields.io/badge/Deployment-Local--First-green)](#)
 [![Organization: Alwkala Digital Labs](https://img.shields.io/badge/Org-Alwkala%20Digital%20Labs-orange)](https://alwkala.com)
 
-**Sovereign, local-first language models, evaluation harnesses, and inference tools by [Alwkala Digital Labs](https://alwkala.com).**  
+**Building Local First , SLMs , LLMS, AI Native applications & Agentic AI frameworks.
+, local-first language models, evaluation harnesses, and inference tools by [Alwkala Digital Labs](https://alwkala.com).**  
 Home of the **AkhetRa** model family (*Ra: Intelligence · Akhet: Governance*).
 
 ---
