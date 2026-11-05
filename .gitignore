@@ -1,5 +1,6 @@
 # Model weights & binaries (hosted on Hugging Face Hub)
 *.gguf
+*.mmproj
 *.bin
 *.safetensors
 *.pt

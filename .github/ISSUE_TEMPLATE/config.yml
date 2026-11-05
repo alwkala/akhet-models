@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Hugging Face Model Hub"
+    url: "https://huggingface.co/alwkala"
+    about: "Download model weights, GGUF quants, and datasets."
+  - name: "Interactive Space Chat"
+    url: "https://huggingface.co/spaces/alwkala/Akhet-Chat"
+    about: "Test Akhet models in an interactive browser demo."
+  - name: "Alwkala Digital Labs"
+    url: "https://alwkala.com"
+    about: "Official website and enterprise research."

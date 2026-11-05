@@ -1,0 +1,76 @@
+name: "🐛 Bug Report"
+description: "Report a reproducible bug, inference anomaly, or execution error"
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please verify you are using the latest version of `akhet-models` and `llama.cpp`.
+
+  - type: dropdown
+    id: model
+    attributes:
+      label: Target Model
+      description: Which model are you experiencing an issue with?
+      options:
+        - "Akhet-Ra1 (4.2B Reasoning)"
+        - "Akhet-Aton-2B (2.23B Multimodal)"
+        - "Evaluation Harness / Benchmarks"
+        - "Studio Launcher (Alwkala-Studio.ps1)"
+        - "Other / General Repository"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Inference Runtime
+      description: What runtime or runner is executing the model?
+      options:
+        - "llama-server / llama-cli"
+        - "Ollama"
+        - "PowerShell Adaptive Runner (run-Aton-Adaptive.ps1)"
+        - "LM Studio"
+        - "Python API / Custom"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment & Hardware Specs
+      description: OS, GPU, VRAM, RAM, and runtime versions.
+      placeholder: |
+        OS: Windows 11 / Ubuntu 24.04
+        GPU: NVIDIA RTX 4060 8GB / Apple M2 16GB / CPU Only
+        llama.cpp version: b3800
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Exact command line arguments, prompt, or code to reproduce.
+      placeholder: |
+        1. Run `llama-server ...`
+        2. Send prompt: "..."
+        3. Observed error or unexpected token generation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Terminal Logs & Error Output
+      description: Paste console output or stack traces here.
+      render: shell

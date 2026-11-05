@@ -1,0 +1,45 @@
+name: "💡 Feature Proposal"
+description: "Suggest a new model feature, architecture improvement, or launcher enhancement"
+title: "[FEATURE]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping evolve the **Akhet Models** ecosystem!
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Proposal Summary
+      description: Concise description of the proposed capability or enhancement.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      description: What part of the ecosystem does this proposal target?
+      options:
+        - "Ra Series (Cognition / Reasoning)"
+        - "Aton Series (Multimodal / Edge Agents)"
+        - "Akhet Layer (Governance / Memory)"
+        - "Evaluation & Benchmarks"
+        - "Launchers & Hardware Automation"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation & Use Case
+      description: Why is this feature needed and who benefits from it?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Implementation
+      description: Detailed ideas on how this could be implemented.
